@@ -16,20 +16,17 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 
 
 ## Goal
-The goal is to train agents to get an average score of at least +30 (over 100 consecutive episodes, and over all agents). Specifically,
-* After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 20 (potentially different) scores. We then take the average of these 20 scores.  
+This task is episodic, and in order to solve the environment, the agent must get an average score of at least +13 over 100 consecutive episodes.
 
-* This yields an average score for each episode (where the average is over all 20 agents).
-
-As an example, consider the plot below, where we have plotted the average score (over all 20 agents) obtained with each episode.  
+As an example, consider the plot below, where we have plotted the score obtained with each episode.  
 
 ![mean score plot](score.png)  
-The environment is considered solved, when the average (over 100 episodes) of those average scores is at least +30.
+The environment is considered solved, when the average score (over 100 consecutive episodes) is at least +13.
 
 ## Result
-A movie clip demonstrating successfully trained agents (achieving an average score of +35) is shown below. The robotic arms can follow the moving targets (rotating green ball) most of the time.  
+A movie clip demonstrating successfully trained agents (achieving an average score of +16) is shown below. The trained agent has learned to move towards yellow bananas while trying to avoid blue bananas in front by either turning left or right or backing up.   
 
-![trained agents](reacher.gif)  
+![trained agents](banana.gif)  
 
 ## Dependencies
 * Numpy
@@ -38,9 +35,9 @@ A movie clip demonstrating successfully trained agents (achieving an average sco
 * ML-Agents toolkit (`pip install unityagents`) 
 
 ## Usage
-* The Windows (64-bit) version of the environment is provided in this repo in the folder "Reacher_Windows_x86_64".
-* Mac OSX version can be downloaded [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip)
-* Linux version can be downloaded [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
+* The Windows (64-bit) version of the environment is provided in this repo in the folder "Banana_Windows_x86_64".
+* Mac OSX version can be downloaded [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
+* Linux version can be downloaded [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 
 Follow the step by step instructions in **Report.ipynb** to start running the environment and training the agents.
 
